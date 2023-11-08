@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apexrim</title>
+
+    <!-- !GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- !FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- !STYLES -->
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="./contactus.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+  </head>
+  <body>
+    <section id="loader_section">
+      <figure>
+        <img src="../assets/logo_without_bg.png" alt="" srcset="" />
+      </figure>
+    </section>
+    <header class="flex">
+      <div class="logo">
+        <a href="/"
+          ><img src="../assets/logo_without_bg.png" alt="Apexrim"
+        /></a>
+      </div>
+      <nav>
+        <ul class="flex nav_link_container">
+          <li><a class="nav_link_btn" href="/">HOME</a></li>
+          <li><a class="nav_link_btn" href="/aboutus/">ABOUT US</a></li>
+          <li>
+            <a class="nav_link_btn" href="/products">PRODUCTS</a>
+          </li>
+          <li>
+            <a class="nav_link_btn active_nav" href="/contactus/">CONTACT US</a>
+          </li>
+          <li>
+            <a class="nav_link_btn" href="/achievements/">OUR CERTIFICATE</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <button class="nav_link_btn">
+        <a href="#" class="inquiry_btn">ENQUIRY</a>
+      </button> -->
+      <div class="burger_container">
+        <i class="burger_line"></i>
+        <i class="burger_line"></i>
+        <i class="burger_line"></i>
+      </div>
+    </header>
+
+    <!--! ===================HERO SECTION======================== -->
+    <section class="hero_section">
+      <div class="hero_dis">
+        <h4>Contact Us</h4>
+        <p class="hero_dis_navigate">
+          <a href="#">Home</a> / <a href="#">Contact us</a>
+        </p>
+      </div>
+    </section>
+
+    <!--! ===================OUR SERVICES SECTION======================== -->
+    <section class="section" id="our_service_section">
+      <div class="service_card_container flex">
+        <div class="service_card">
+          <h3>Phone Number</h3>
+          <h2>+91 72 0106 5314</h2>
+          <div class="service_card_btn_icon">
+            <i class="fa-solid fa-tractor"></i>
+          </div>
+        </div>
+        <div class="service_card">
+          <h3>Email Address</h3>
+          <h2>info@apexriminternational.com</h2>
+          <div class="service_card_btn_icon">
+            <i class="fa-solid fa-wheat-awn"></i>
+          </div>
+        </div>
+        <div class="service_card">
+          <h3>Location</h3>
+          <h2>
+            Survey Number: 28, Goda-Ogadnath Temple Road Ogadpura, Diyodar,
+            State: Gujarat, pincode: 385320
+          </h2>
+          <div class="service_card_btn_icon">
+            <i class="fa-solid fa-person-digging"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! ===================WHY CHOOSE US======================== -->
+    <section class="section">
+      <div class="why_choose_us_main_container flex">
+        <div class="why_choose_us_left_container">
+          <figure class="why_choose_us_img_container">
+            <img src="../assets/home/farmer.webp" alt="" srcset="" />
+          </figure>
+          <div class="why_choose_us_img_bg"></div>
+        </div>
+        <div class="why_choose_us_right_container">
+          <div class="why_choose_us_header">
+            <p>Contact Us</p>
+            <h3>Get In Touch</h3>
+          </div>
+          <form action="" method="post">
+            <div class="form_input_container flex">
+              <label for="name">Name*</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+                minlength="3"
+                maxlength="15"
+              />
+            </div>
+            <div class="form_input_container flex">
+              <label for="name">Phone Number*</label>
+              <input
+                type="number"
+                name="name"
+                id="name"
+                placeholder="Enter your phone number"
+                required
+                minlength="5"
+              />
+            </div>
+            <div class="form_input_container flex">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="form_input_container flex">
+              <label for="dis">Email Address</label>
+              <textarea
+                name="dis"
+                id="dis"
+                cols="30"
+                placeholder="Your Description"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="discover_more_btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--! ===================VIDEO SECTION======================== -->
+    <div class="video_container hide">
+      <div class="video_inner_container">
+        <button class="video_close_btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <video controls>
+          <source
+            src="
+              http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+            "
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+    <section class="video_section section">
+      <div class="video_main_container flex">
+        <div class="video_left_container">
+          <h3>
+            Agriculture <br />
+            Matters to the <br />
+            Future of <br />
+            Development
+          </h3>
+        </div>
+        <!-- <div class="video_right_container">
+          <button class="video_play_btn">
+            <i class="fa-solid fa-play"></i>
+            <div class="ripple"></div>
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <!--! ===================OUR PRIDE SECTION======================== -->
+    <section class="section">
+      <div class="section_header_container">
+        <p>Our Pride</p>
+        <h6>CERTIFICATE</h6>
+      </div>
+      <div class="our_pride_card_container flex">
+        <figure class="our_pride_card">
+          <img src="/assets/cert/apeda.png" alt="" srcset="" />
+        </figure>
+        <figure class="our_pride_card">
+          <img src="/assets/cert/dgft.png" alt="" srcset="" />
+        </figure>
+        <figure class="our_pride_card">
+          <img src="/assets/cert/fssai.png" alt="" srcset="" />
+        </figure>
+        <figure class="our_pride_card">
+          <img src="/assets/cert/iso.png" alt="" srcset="" />
+        </figure>
+        <figure class="our_pride_card">
+          <img src="/assets/cert/sgs.png" alt="" srcset="" />
+        </figure>
+        <figure class="our_pride_card">
+          <img src="/assets/cert/spicesBoard.png" alt="" srcset="" />
+        </figure>
+      </div>
+    </section>
+    <footer class="footer flex">
+      <div class="footer_container">
+        <figure class="footer_logo">
+          <img src="../assets/logo_without_bg.png" alt="" srcset="" />
+        </figure>
+        <p>
+          There are many variations of passages of lorem ipsum available, but
+          the majority suffered.
+        </p>
+        <div class="footer_social_icon_container flex">
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer_container">
+        <h6 class="footer_header">Useful Link</h6>
+        <ul class="footer_list_container">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer_container">
+        <h6 class="footer_header">About Website</h6>
+        <ul class="footer_list_container">
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer_container">
+        <h6 class="footer_header">Quick Contacts</h6>
+        <ul class="footer_list_container">
+          <li>
+            <a href="tel: +917201065314" target="_blank" class="flex"
+              ><i class="fa-solid fa-phone"></i>+91 72 0106 5314</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto: info@apexriminternational.com"
+              target="_blank"
+              class="flex"
+              ><i class="fa-solid fa-envelope"></i
+              >info@apexriminternational.com</a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex"
+              ><i class="fa-solid fa-location-dot"></i>Survey Number: 28,
+              Goda-Ogadnath Temple Road <br />
+              Ogadpura, Diyodar, State: Gujarat, <br />
+              pincode: 385320</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <!-- !SCRIPTS -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="./contactus.js"></script>
+</html>

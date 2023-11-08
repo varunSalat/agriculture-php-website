@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Exclude specific file extensions from the rewrite rule
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|webp|png)$
+
+# Check if the request starts with "/singleProductPage/"
+RewriteCond %{REQUEST_URI} ^/singleProductPage/
+
+# Rewrite the request to index.php in the singleProductPage folder
+RewriteRule ^singleProductPage/ singleProductPage/index.php [L]

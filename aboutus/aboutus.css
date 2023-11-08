@@ -1,0 +1,176 @@
+.hero_section {
+  height: 40vh;
+  min-height: 400px;
+  position: relative;
+  background: url(../assets/aboutus/hero_bg.jpg) bottom/cover no-repeat;
+  background-attachment: fixed;
+}
+.hero_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero_dis {
+  width: fit-content;
+  background: none;
+  text-align: center;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+}
+
+.hero_dis_navigate a,
+.hero_dis_navigate {
+  font-size: calc(var(--body_text) * 1.2);
+  color: var(--white_color);
+  color: #e3e0e0;
+}
+.hero_dis h4 {
+  margin-bottom: 0.5em;
+  font-size: var(--primary_header);
+  color: var(--white_color);
+}
+
+/* !USP CONTAINER */
+.usp_container {
+  flex-wrap: wrap;
+  gap: 4em;
+  justify-content: center;
+}
+.usp_card {
+  width: min(350px, 100%);
+  height: 250px;
+}
+.usp_card figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.usp_card figure img {
+  transition: var(--three_mili);
+  -webkit-transition: var(--three_mili);
+  -moz-transition: var(--three_mili);
+  -ms-transition: var(--three_mili);
+  -o-transition: var(--three_mili);
+}
+.usp_card figure img:hover {
+  filter: blur(5px) !important;
+  -webkit-filter: blur(5px) !important;
+}
+.usp_card article {
+  margin: 0 auto;
+  background-color: var(--primary_color);
+  color: var(--white_color);
+  width: fit-content;
+  padding: 1em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.usp_card article h4 {
+  font-size: var(--body_text);
+  font-weight: normal;
+}
+.why_choose_us_img_container {
+  height: 400px;
+  width: 450px;
+}
+#our_mission_section {
+  flex-direction: row-reverse;
+}
+
+/* !CONTACT US BANNER */
+.contact_us_banner {
+  background-color: var(--primary_color);
+  min-height: 300px;
+  margin-bottom: 4em;
+  justify-content: space-around;
+}
+.contact_us_banner_btn {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: var(--black_color);
+  background-color: var(--secondary_color);
+  font-size: var(--body_text);
+  display: block;
+  width: fit-content;
+  padding: 0.9em 1.3em;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: var(--three_mili);
+  -webkit-transition: var(--three_mili);
+  -moz-transition: var(--three_mili);
+  -ms-transition: var(--three_mili);
+  -o-transition: var(--three_mili);
+}
+.left_banner_container h4 {
+  color: var(--white_color);
+  font-size: var(--secondary_header);
+}
+.contact_us_banner_btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0px;
+  background-color: var(--black_color);
+  width: 100%;
+  height: 100%;
+  transition: var(--three_mili);
+  -webkit-transition: var(--three_mili);
+  -moz-transition: var(--three_mili);
+  -ms-transition: var(--three_mili);
+  -o-transition: var(--three_mili);
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+.contact_us_banner_btn:hover::before {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.contact_us_banner_btn:hover {
+  color: var(--white_color);
+}
+@media screen and (max-width: 800px) {
+  #our_mission_section {
+    flex-direction: column;
+  }
+  .why_choose_us_left_container,
+  .why_choose_us_right_container,
+  .why_choose_us_img_container {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contact_us_banner {
+    flex-direction: column;
+  }
+}
