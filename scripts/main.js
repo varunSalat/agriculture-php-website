@@ -109,29 +109,29 @@ gsap.from(".what_we_offer_card", {
 });
 
 // VIDEO SECTION
-gsap.from(".completed_work_card", {
-  scrollTrigger: {
-    trigger: ".completed_work_card",
-    start: "top 70%",
-    onEnter: () => changeAgriProdCount(),
-    onEnterBack: () => false,
-    // markers: true,
-  },
-});
-const countList = [5000, 4000, 3500, 6400];
-const countElement = document.querySelectorAll(".completed_work_card h5");
-const changeAgriProdCount = () => {
-  countList.forEach((item, index) => {
-    let num = 0;
-    const interval = setInterval(() => {
-      if (num === item) {
-        clearInterval(interval);
-      }
-      countElement[index].innerText = num;
-      num += 200;
-    }, 100);
-  });
-};
+// gsap.from(".completed_work_card", {
+//   scrollTrigger: {
+//     trigger: ".completed_work_card",
+//     start: "top 70%",
+//     onEnter: () => changeAgriProdCount(),
+//     onEnterBack: () => false,
+//     // markers: true,
+//   },
+// });
+// const countList = [5000, 4000, 3500, 6400];
+// const countElement = document.querySelectorAll(".completed_work_card h5");
+// const changeAgriProdCount = () => {
+//   countList.forEach((item, index) => {
+//     let num = 0;
+//     const interval = setInterval(() => {
+//       if (num === item) {
+//         clearInterval(interval);
+//       }
+//       countElement[index].innerText = num;
+//       num += 200;
+//     }, 100);
+//   });
+// };
 
 // VIDEO SECTION
 

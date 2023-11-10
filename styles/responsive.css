@@ -199,23 +199,11 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
-  .video_play_btn {
-    font-size: calc(var(--primary_header));
-    height: 80px;
-    width: 80px;
-  }
-}
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 630px) {
   .video_main_container {
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;
-  }
-  .video_play_btn {
-    font-size: calc(var(--primary_header));
-    height: 60px;
-    width: 60px;
   }
 }
 

@@ -98,6 +98,7 @@ button {
   left: 0;
   z-index: 4;
   display: grid;
+  display: none !important;
   place-items: center;
   opacity: 1;
   transition: all 0.4s ease;
@@ -254,34 +255,13 @@ header {
 .hero_slider {
   width: 100vw;
 }
-
-.hero_img {
-  position: absolute;
-  opacity: 0;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transition: all 2s linear;
-  -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
-  -ms-transition: all 2s linear;
-  -o-transition: all 2s linear;
+.hero_slider_container figure {
+  height: 100%;
 }
-
-.hero_img.active {
-  opacity: 1;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transition: all 2s linear;
-  -webkit-transition: all 2s linear;
-  -moz-transition: all 2s linear;
-  -ms-transition: all 2s linear;
-  -o-transition: all 2s linear;
+.hero_img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
 }
 .hero_dis {
   position: absolute;
@@ -309,6 +289,9 @@ header {
 .hero_dis_header {
   font-size: calc(var(--primary_header) * 1.1);
   color: var(--white_color);
+}
+.hero_secondary_header {
+  font-size: var(--tertiary_header);
 }
 .hero_dis_text {
   color: var(--white_color);
@@ -618,8 +601,8 @@ header {
   background-attachment: fixed;
   height: 650px;
   left: 0;
-  margin-top: 15em;
-  margin-bottom: 6em;
+  /* margin-top: 15em; */
+  /* margin-bottom: 6em; */
 }
 .completed_work_container {
   position: absolute;
@@ -676,18 +659,18 @@ header {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  font-size: calc(var(--primary_header) * 1.4);
+  padding: 0.4em 0.6em;
+  font-size: var(--secondary_header);
   color: var(--black_color);
   display: grid;
   place-items: center;
-  height: 110px;
-  width: 110px;
+
   background-color: var(--white_color);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .video_right_container button i {
   display: block;

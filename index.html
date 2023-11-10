@@ -20,7 +20,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- !STYLES -->
+    <!-- SLICK SLIDER -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
@@ -42,10 +50,10 @@
             <a class="nav_link_btn" href="/products">PRODUCTS</a>
           </li>
           <li>
-            <a class="nav_link_btn" href="/contactus/">CONTACT US</a>
+            <a class="nav_link_btn" href="/achievements/">OUR CERTIFICATE</a>
           </li>
           <li>
-            <a class="nav_link_btn" href="/achievements/">OUR CERTIFICATE</a>
+            <a class="nav_link_btn" href="/contactus/">CONTACT US</a>
           </li>
         </ul>
       </nav>
@@ -61,19 +69,27 @@
 
     <!--! ===================HERO SECTION======================== -->
     <section class="hero_section">
-      <div class="hero_slider">
-        <img class="hero_img active" src="./assets/home.jpg" alt="hero_img" />
+      <div class="hero_slider_container">
+        <figure>
+          <img class="hero_img" src="./assets/home.jpg" alt="hero_img" />
+        </figure>
+        <figure>
+          <img class="hero_img" src="./assets/home.jpg" alt="hero_img" />
+        </figure>
+        <figure>
+          <img class="hero_img" src="./assets/home.jpg" alt="hero_img" />
+        </figure>
       </div>
       <div class="hero_dis">
         <h3 class="hero_dis_small_header">We are</h3>
-        <h1 class="hero_dis_header">Apexrim</h1>
-        <h1 class="hero_dis_header">International</h1>
+        <h1 class="hero_dis_header">Apex Rim</h1>
+        <h1 class="hero_dis_header hero_secondary_header">International</h1>
         <p class="hero_dis_text">
           Cultivating Sustainable Futures, One Crop at a Time. Discover
           Excellence with Apexrim International – Your Trusted Partner in Indian
           Agriculture
         </p>
-        <a href="#" id="hero_btn" class="inquiry_btn">EXPLORE</a>
+        <a href="/products/" id="hero_btn" class="inquiry_btn">EXPLORE</a>
       </div>
     </section>
 
@@ -109,13 +125,25 @@
         <div class="about_us_home_section_left_container">
           <div class="about_us_main_image_container">
             <figure class="about_us_main_img">
-              <img src="./assets/home/aboutus.webp" alt="" />
+              <img
+                src="./assets/home/aboutus.webp"
+                alt="main-img"
+                loading="lazy"
+              />
             </figure>
             <figure class="plant_2">
-              <img src="./assets/home/plants-02.svg" alt="" srcset="" />
+              <img
+                src="./assets/home/plants-02.svg"
+                alt="plants-02"
+                loading="lazy"
+              />
             </figure>
             <figure class="secondary_img">
-              <img src="./assets/home/secondaryaboutus.webp" alt="" srcset="" />
+              <img
+                src="./assets/home/secondaryaboutus.webp"
+                alt="secondaryaboutus"
+                loading="lazy"
+              />
             </figure>
           </div>
         </div>
@@ -200,12 +228,12 @@
             <span class="video_block">Development </span>
           </h3>
         </div>
-        <!-- <div class="video_right_container">
-          <button class="video_play_btn">
-            <i class="fa-solid fa-play"></i>
+        <div class="video_right_container">
+          <a href="/aboutus/" class="video_play_btn">
+            About Us
             <div class="ripple"></div>
-          </button>
-        </div> -->
+          </a>
+        </div>
       </div>
     </section>
 
@@ -288,29 +316,37 @@
       </div>
       <div class="our_pride_card_container flex">
         <figure class="our_pride_card">
-          <img src="/assets/cert/apeda.png" alt="" srcset="" />
+          <img src="/assets/cert/apeda.png" alt="apeda" loading="lazy" />
         </figure>
         <figure class="our_pride_card">
-          <img src="/assets/cert/dgft.png" alt="" srcset="" />
+          <img src="/assets/cert/dgft.png" alt="dgft" loading="lazy" />
         </figure>
         <figure class="our_pride_card">
-          <img src="/assets/cert/fssai.png" alt="" srcset="" />
+          <img src="/assets/cert/fssai.png" alt="fssai" loading="lazy" />
         </figure>
         <figure class="our_pride_card">
-          <img src="/assets/cert/iso.png" alt="" srcset="" />
+          <img src="/assets/cert/iso.png" alt="iso" loading="lazy" />
         </figure>
         <figure class="our_pride_card">
-          <img src="/assets/cert/sgs.png" alt="" srcset="" />
+          <img src="/assets/cert/sgs.png" alt="sgs" loading="lazy" />
         </figure>
         <figure class="our_pride_card">
-          <img src="/assets/cert/spicesBoard.png" alt="" srcset="" />
+          <img
+            src="/assets/cert/spicesBoard.png"
+            alt="spicesBoard"
+            loading="lazy"
+          />
         </figure>
       </div>
     </section>
     <footer class="footer flex">
       <div class="footer_container">
         <figure class="footer_logo">
-          <img src="./assets/logo_without_bg.png" alt="" srcset="" />
+          <img
+            src="./assets/logo_without_bg.png"
+            alt="Apexrim International"
+            loading="lazy"
+          />
         </figure>
         <p>
           Cultivating Sustainable Futures, One Crop at a Time. Discover
@@ -373,17 +409,36 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- JQUERY -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
   <!-- CUSTOM JS -->
   <script src="./scripts/main.js"></script>
   <script>
-    const videoContainer = document.querySelector(".video_container"),
-      videoPlayBtn = document.querySelector(".video_play_btn"),
-      videoCloseBtn = document.querySelector(".video_close_btn");
-    videoPlayBtn.addEventListener("click", () =>
-      videoContainer.classList.remove("hide")
-    );
-    videoCloseBtn.addEventListener("click", () =>
-      videoContainer.classList.add("hide")
-    );
+    $(".hero_slider_container").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      draggable: false,
+    });
+    // const videoContainer = document.querySelector(".video_container"),
+    //   videoPlayBtn = document.querySelector(".video_play_btn"),
+    //   videoCloseBtn = document.querySelector(".video_close_btn");
+    // videoPlayBtn.addEventListener("click", () =>
+    //   videoContainer.classList.remove("hide")
+    // );
+    // videoCloseBtn.addEventListener("click", () =>
+    //   videoContainer.classList.add("hide")
+    // );
   </script>
 </html>

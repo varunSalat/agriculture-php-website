@@ -382,7 +382,7 @@
 .more_product_detail_container {
   margin-top: 3em;
   background-color: #e6aa3b;
-  border: 1px solid var(--tertiary_black_color);
+  /* border: 1px solid var(--tertiary_black_color); */
 }
 .general_detail_container {
   border: none !important;
